@@ -12,7 +12,7 @@ const Blogs = ({ handleBookmarked, handleMarkRead }) => {
 
   return (
     <div className="lg:w-[70%]">
-      <h3 className="my-6 text-lg font-semibold text-center">
+      <h3 className="mt-5 mb-6 text-2xl font-semibold text-center">
         Total Blogs : {blogs.length}
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">

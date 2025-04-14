@@ -11,6 +11,10 @@ function App() {
     if (bookmarked.indexOf(blog) === -1) {
       const newBookmarked = [...bookmarked, blog];
       setBookmarked(newBookmarked);
+    } else {
+      bookmarked.splice(bookmarked.indexOf(blog), 1);
+      const newBookmarked = [...bookmarked, blog];
+      setBookmarked(newBookmarked);
     }
   };
 

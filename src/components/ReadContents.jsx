@@ -2,7 +2,7 @@ import React from "react";
 
 const ReadContents = ({ bookmarked, readingTime }) => {
   return (
-    <div className="mt-2 flex-1">
+    <div className="lg:mt-2 flex-1">
       <h3 className="text-lg font-semibold text-center">
         Reading Time : {readingTime} minutes
       </h3>
@@ -13,7 +13,7 @@ const ReadContents = ({ bookmarked, readingTime }) => {
         {bookmarked.map((bookmark) => (
           <h3
             key={bookmark.id}
-            className="bg-neutral-100 py-3 px-4 rounded-lg text-center lg:text-left"
+            className="bg-neutral-100 py-3 px-4 rounded-lg text-center lg:text-left text-xl font-normal"
           >
             {bookmark.title}
           </h3>
