@@ -1,5 +1,3 @@
-import React from "react";
-
 const ReadContents = ({ bookmarked, readingTime }) => {
   return (
     <div className="lg:mt-2 flex-1">

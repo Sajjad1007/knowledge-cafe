@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Navbar from "./components/Navbar";
-import Blogs from "./components/Blogs";
-import ReadContents from "./components/ReadContents";
+import Navbar from "../components/Navbar";
+import Blogs from "../components/Blogs";
+import ReadContents from "../components/ReadContents";
 
 function App() {
   const [bookmarked, setBookmarked] = useState([]);
@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 container mx-auto">
-      <Navbar></Navbar>
+      <Navbar />
       <div className="flex flex-col lg:flex-row gap-6 mb-3 lg:mb-6 max-w-96 sm:max-w-none mx-auto">
         <Blogs
           handleBookmarked={handleBookmarked}

@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import BlogCard from "./BlogCard";
 
 const Blogs = ({ handleBookmarked, handleMarkRead }) => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch("blogs.json")
+    fetch("blogsData.json")
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, []);
